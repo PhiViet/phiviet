@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.0.0-beta.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.0.2/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/circle.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="image/pv.png">
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnco4UeEgzjIOBnIaGy0YVA93fBR8j1w0&callback=initMap">
+    </script>
+    <script src="js/ggmap.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- navbar -->
+        <nav class="nav navbar fixed-top navbar-expand-md navbar-dark" id="nav">
+            <div class="navbar-brand banner">
+                <img class="logo" src="image/pv.png" width="7%" height="7%" alt="" srcset=""> Phi Viet
+                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btninfo" onclick="scroll_to_div('information')">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btnskill" onclick="scroll_to_div('skill')">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btnedu" onclick="scroll_to_div('education')">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btncontact" onclick="scroll_to_div('contact')">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end navbar -->
+    </header>
+    <!-- end header -->
+    <!-- content -->
+    <div class="container">
+        <!-- Intro -->
+        <div id="information" class="information">
+            <div class="row">
+                <div class="col-md-7">
+                    <figure class="note col-md-11">
+                        <img src="image/note.png" width="50px" height="50px" alt="" srcset=""> I'am Hoa Viet , a student in Thu Dau Mot University and learning Information Technology . My major
+                        is Software Engineering . I love coding but I don't want to damage my brain !!
+                    </figure>
+                </div>
+                <div class="col-md-5 text-center align-self-center">
+                    <div class="swiper-container intro-container">
+                        <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide intro-slide">
+                                <div class="text" data-swiper-parallax="-100">
+                                    <p>
+                                        <img src="image/cv.png" width="80px" height="80px" alt="" srcset="">&nbsp&nbsp: I've dreamed of being a developer ...</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide intro-slide">
+                                <div class="text" data-swiper-parallax="-100">
+                                    <p>
+                                        <img src="image/cv.png" width="80px" height="80px" alt="" srcset="">&nbsp&nbsp: I will try my best to finish it well.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Intro -->
+        <!-- Skill -->
+        <div id="skill" class="skill card animated fadeInDown">
+            <div class="card-block">
+                <div id="title" class="title row animated fadeInUp">
+                    <div class="d-none d-lg-block col-lg-4 align-self-center">
+                        <hr>
+                    </div>
+                    <h3 class="col-md-12 col-lg-4">
+                        <span>SKILLS &diams; LANGUAGES</span>
+                    </h3>
+                    <div class="d-none d-lg-block col-lg-4 align-self-center">
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row col">
+                    <div class="cir col-md-6 col-lg-3">
+                        <div id="amcir1" class="inner-content text-center center animated bounceIn">
+                            <div id="per1" class="background c100 p65 center animated flip" style="background-image: url('image/ps.png') !important;">
+                                <span>65%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <em>
+                                    <img src="image/ps.png" width="20%" height="20%" alt="" srcset="">
+                                    <b class="num1">65
+                                        <b class="per1">%</b>
+                                    </b>
+                                    <b class="name"> PHOTOSHOP CS</b>
+                                </em>
+                            </p>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="cir col-md-6 col-lg-3">
+                        <div id="amcir2" class="inner-content text-center animated bounceIn">
+                            <div id="per2" class="animated flip background c100 p62 center" style="background-image: url('image/openshift.png') !important;">
+                                <span>62%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <em>
+                                    <img src="image/openshift.png" width="20%" height="20%" alt="" srcset="">
+                                    <b class="num1">62
+                                        <b class="per1">%</b>
+                                    </b>
+                                    <b class="name"> OPENSHIFT</b>
+                                </em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cir col-md-6 col-lg-3">
+                        <div id="amcir3" class="inner-content text-center animated bounceIn">
+                            <div id="per3" class="animated flip background c100 p50 orange center" style="background-image: url('image/octocat.png') !important">
+                                <span>50%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <em>
+                                    <img src="image/octocat.png" width="20%" height="20%" alt="" srcset="">
+                                    <b class="num1" style="color:orange;">50
+                                        <b class="per1">%</b>
+                                    </b>
+                                    <b class="name"> GIT</b>
+                                </em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cir col-md-6 col-lg-3">
+                        <div id="amcir4" class="inner-content text-center animated bounceIn">
+                            <div id="per4" class="animated flip background c100 p68 center" style="background-image: url('image/dxr.png') !important">
+                                <span>68%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <em>
+                                    <img src="image/dxr.png" width="20%" height="20%" alt="" srcset="">
+                                    <b class="num1">68
+                                        <b class="per1">%</b>
+                                    </b>
+                                    <b class="name"> DevExpress</b>
+                                </em>
+                            </p>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="cir col-md-6 col-lg-3">
+                        <div id="amcir5" class="inner-content text-center animated bounceIn">
+                            <div id="per5" class="animated flip background c100 p55 orange center" style="background-image: url('image/js.png') !important">
+                                <span>55%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <em>
+                                    <img src="image/js.png" width="20%" height="20%" alt="" srcset="">
+                                    <b class="num1" style="color:orange;">55
+                                        <b class="per1">%</b>
+                                    </b>
+                                    <b class="name"> JAVASCRIPT</b>
+                                </em>
+                            </p>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="cir col-md-6 col-lg-3">
+                        <div id="amcir6" class="inner-content text-center animated bounceIn">
+                            <div id="per6" class="animated flip background c100 p65 center" style="background-image: url('image/php.png') !important">
+                                <span>65%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <em>
+                                    <img src="image/php.png" width="20%" height="20%" alt="" srcset="">
+                                    <b class="num1">65
+                                        <b class="per1">%</b>
+                                    </b>
+                                    <b class="name"> PHP</b>
+                                </em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cir col-md-6 col-lg-3">
+                        <div id="amcir7" class="inner-content text-center animated bounceIn">
+                            <div id="per7" class="animated flip background c100 p69 center" style="background-image: url('image/csharp.png') !important">
+                                <span>69%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <em>
+                                    <img src="image/csharp.png" width="20%" height="20%" alt="" srcset="">
+                                    <b class="num1">69
+                                        <b class="per1">%</b>
+                                    </b>
+                                    <b class="name"> C#</b>
+                                </em>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cir col-md-6 col-lg-3">
+                        <div id="amcir8" class="inner-content text-center animated bounceIn">
+                            <div id="per8" class="animated flip background c100 p61 center" style="background-image: url('image/bootstrap.png') !important">
+                                <span>61%</span>
+                                <div class="slice">
+                                    <div class="bar"></div>
+                                    <div class="fill"></div>
+                                </div>
+                            </div>
+                            <p>
+                                <em>
+                                    <img src="image/bootstrap.png" width="20%" height="20%" alt="" srcset="">
+                                    <b class="num1">61
+                                        <b class="per1">%</b>
+                                    </b>
+                                    <b class="name">Bootstrap</b>
+                                </em>
+                            </p>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Skill -->
+
+        <!-- Edu -->
+        <div id="education" class="education">
+            <div class="row title">
+                <div class="d-none d-lg-block col-lg-5 align-self-center">
+                    <hr>
+                </div>
+                <h3 class="col-md-12  col-lg-2 text-center">
+                    <span>EDUCATION</span>
+                </h3>
+                <div class="d-none d-lg-block col-lg-5 align-self-center">
+                    <hr>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="containtime left" data-aos="fade-right" data-aos-duration="600">
+                    <div class="content row">
+                        <div class="col-md-12 col-lg-4">
+                            <img src="image/tdmu.png" width="100%" height="100%" alt="" srcset="">
+                        </div>
+                        <div class="col-md-12 col-lg-8">
+                            <h2>2014 - Present</h2>
+                            <p>Learning Software Engineering at Thu Dau Mot University - TDMU</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="containtime right" data-aos="fade-left" data-aos-duration="600">
+                    <div class="content row">
+                        <div class="col-lg-5">
+                            <h2>2017</h2>
+                            <p>Internship at Janeto</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="imgJa" src="image/janeto.png" width="100%" height="100%" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Edu -->
+
+        <!-- Contact -->
+        <div id="contact" class="contact card">
+            <div class="card-block">
+                <div class="row">
+                    <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="comment">
+                            <div class="swiper-container comment-container">
+                                <div class="swiper-wrapper comment-wrapper">
+                                    <div class="swiper-slide comment-slide row">
+                                        <!-- <div class="col-md-4"> -->
+                                        <img src="image/linh.jpg" width="60%" height="60%" class="col-lg-5 col-md-4 rounded-circle" alt="" srcset="">
+                                        <!-- </div> -->
+                                        <div class="col-lg-7 col-md-8 quote">
+                                            &ldquo; Cái tật hay quên không bao giờ bỏ !! &rdquo;
+                                            <p>Trúc Linh</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide comment-slide row">
+                                        <img src="image/huy.jpg" width="60%" height="60%" class="col-lg-5 col-md-4 rounded-circle" alt="" srcset="">
+                                        <div class="col-lg-7 col-md-8 quote">
+                                            &ldquo; Chú còn thứ gì không quên không !! &rdquo;
+                                            <p>Thiệu Huy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination comment-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message col-lg-5" data-aos="fade-left" data-aos-duration="1500">
+                        <div class="col-lg-10">
+                            <h3>Message for me</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Name ..">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email address</label>
+                                    <input type="email" name="email" class="form-control" placeholder="Email ..">
+                                </div>
+                                <div class="form-group">
+                                    <label>Message</label>
+                                    <textarea type="text" name="message" style="overflow:hidden !important;" placeholder="Enter message .." class="form-control"
+                                        rows="3"></textarea>
+                                </div>
+                                <div class="form-group btnsend">
+                                    <button type="button" onclick="postData()" class="text-center btn btn-outline-dark offset-md-5 offset-sm-5">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+
+        <!-- google map -->
+        <div class="card">
+            <div id="map" class="card-block" style="height:300px;" data-aos="fade-right" data-aos-duration="600">
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="card footer">
+            <div class="card-block" data-aos="fade-left" data-aos-duration="600">
+                <div class="row">
+                    <div class="offset-md-1 col-md-3 contactme">
+                        <p>Contact me at :</p>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="mailto:phiviet.ff@gmail.com" target="_blank" class="btn btn-outline-dark btn-lg" role="button">
+                            <i class="fas fa-envelope"></i>
+                            phiviet.ff
+                            <img class="imagefb" src="https://yt3.ggpht.com/-npvsKjSNlR4/AAAAAAAAAAI/AAAAAAAAAAA/tWKHmAz8qe0/s288-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="https://www.facebook.com/pviet.tr" target="_blank" class="btn btn-outline-dark btn-lg" role="button">
+                            <i class="fab fa-facebook"></i>
+                            @pviet.tr &nbsp
+                            <img class="imagefb" src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.0-1/p160x160/22221954_729065687289067_494015065715699937_n.jpg?oh=099bfb2adb536628bfe6576bfe55cfff&amp;oe=5ABEF942">
+                        </a>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <a href="https://www.youtube.com/channel/UCrHwpfT0OH631xKdRfSWgRQ" target="_blank" class="btn btn-outline-dark btn-lg" role="button">
+                            <i class="fab fa-youtube"></i>
+                            Việt Phi &nbsp
+                            <img class="imagefb" src="https://yt3.ggpht.com/-npvsKjSNlR4/AAAAAAAAAAI/AAAAAAAAAAA/tWKHmAz8qe0/s288-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="coppyright">
+                    <p>
+                        <i class="far fa-copyright"></i>
+                        Design by Phi Viet
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+<script src="js/jquery.min.js">
+</script>
+<script>
+</script>
+<script type="text/javascript">
+    function scroll_to_div(div_id) {
+        $('html,body').animate(
+            {
+                scrollTop: $("#" + div_id).offset().top-100
+            },
+            'slow');
+    }
+</script>
+
+<script src="bootstrap-4.0.0-beta.3-dist/js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+    AOS.init({
+        disable: 'mobile'
+    });
+</script>
+<script src="js/scroll.js"></script>
+<script src="js/postdata.js"></script>
+<script src="swiper/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
+</body>
+
+</html>

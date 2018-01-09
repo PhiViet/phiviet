@@ -1,0 +1,416 @@
+body{
+    background: url("../image/buble.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    color: white !important;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+.container{
+    padding-top:6%;
+}
+.card{
+    margin-top:20px;
+    height: auto;
+    /* opacity: 0.4; */
+    /* background : rgba(255, 255, 255, 0.6); */
+    background-color:rgba(255,255,255,0.6);
+    color: black;
+}
+/* banner */
+.banner{
+    font-family: 'Palatino Linotype', sans-serif;
+    font-size: 20px;
+}
+.logo{
+    transform: rotateY(40deg);
+    animation: round 2s infinite;
+    animation-direction: alternate;
+}
+@keyframes round {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(80deg);
+    }
+}
+/* end banner */
+
+/* navbar */
+header .nav{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    padding:0 5% 0 5%;
+}
+.nav a {
+    font-family: 'Palatino Linotype', sans-serif !important;
+    color: white !important; 
+    background:none!important;
+    border:none; 
+    font-size: 20px;
+}
+.nav a:hover{
+    font-size: 22px;
+    text-shadow: 0 0 0.2em blue, 0 0 0.4em blue,0 0 0.4em blue;
+}
+/* end navbar */
+/* Intro */
+@font-face {
+    font-family: 'Gloria Hallelujah';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gloria Hallelujah'), local('GloriaHallelujah'), url(http://fonts.gstatic.com/s/gloriahallelujah/v9/CA1k7SlXcY5kvI81M_R28cNDay8z-hHR7F16xrcXsJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+.note{
+    display: block;
+    padding: 25px 25px 40px;
+    margin: 0 auto 20px auto;
+    /* width: 600px; */
+    /* height: 600px; */
+    font: 20px 'Gloria Hallelujah', cursive;
+    color :black;
+    line-height: 1.5;
+    border: 0;
+    border-radius: 3px;
+    background: -webkit-linear-gradient(#F9EFAF, #F7E98D);
+    background: -moz-linear-gradient(#F9EFAF, #F7E98D);
+    background: -o-linear-gradient(#F9EF    AF, #F7E98D);
+    background: -ms-linear-gradient(#F9EFAF, #F7E98D);
+    background: linear-gradient(#F9EFAF, #F7E98D);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.5s ease;
+    max-width: 520px;
+    max-height: auto;
+    -ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Safari 3-8 */
+    transform: rotate(2deg);
+}
+/* Slide intro */
+.intro-slide .text {
+    font-size: 25px;
+    max-width: 600px;
+    font-weight: bold;
+    font-family: 'Agency FB', sans-serif;
+}
+/* End Intro */
+.title hr{
+    border-color: white;
+    border-width: medium;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* Skill */
+.container .skill{
+    margin-bottom: 35px;
+    background-color:rgba(0,0,0,0.4);
+    color: white;
+}
+/* .skill h3{
+    text-align:center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 45px;
+} */
+/* End Skill */
+
+.title h3{
+    text-align:center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 45px;
+}
+
+/* Education */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.timeline p{
+    /* color: black; */
+    font-size: 20px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width:6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index:-1;
+}
+.timeline .containtime {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline .containtime::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: black;
+    border: 4px solid white;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 2;
+    right: 30px;
+    /* border: medium solid white; */
+    /* border-width: 10px 0 10px 10px; */
+    /* border-color: transparent transparent transparent; */
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -12px;
+}
+
+/* The actual content */
+
+.content {
+    /* padding: 20px 30px; */
+    left:30px;
+    /* background-color: white; */
+    position: relative;
+    border-radius: 6px;
+}
+/* End Education */
+
+/* Contact */
+.container .contact{
+    margin-bottom: 35px;
+    background-color:rgba(255,255,255,0.4);
+    /* background-color:rgba(0,0,0,0.4); */
+    /* color: white; */
+}
+    /* Comment */
+.comment {
+    height: 420px;
+    width: 100%;
+    /* background: #eee; */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-container {
+width: 100%;
+height: 100%;
+margin-left:10px !important;
+}
+    /* comment-wrapper */
+.quote p{
+text-align: center;
+font-style: italic;
+font-weight:bold;
+}
+.comment-slide {
+text-align: center;
+font-size: 18px;
+    /* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+/* Message */
+.message h3{
+text-align:center;
+font-family: 'Agency FB', sans-serif;
+font-size: 35px;
+}
+.message .btn-outline-dark {
+color:white ;
+background-color: black;
+}
+.message .btn-outline-dark:hover{
+    /* color:black; */
+    /* background-color: darkgrey; */
+    text-shadow: 0 0 0.2em blue, 0 0 0.4em blue,0 0 0.4em blue;
+    font-size: 18px;
+
+}
+/* End Contact */
+
+/* Footer */
+.container .footer{
+    margin-bottom: 35px;
+    background-color:rgba(255,255,255,0.4);
+    /* background-color:rgba(0,0,0,0.4); */
+    /* color: white; */
+}
+.footer .btn-outline-dark {
+    color: black;
+    border-color: transparent !important;
+}
+.footer .btn-outline-dark:hover{
+    font-size: 22px;
+    text-shadow: 0 0 0.2em blue, 0 0 0.4em blue,0 0 0.4em blue;
+}
+.container .contactme {
+    text-align: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size:25px;
+    padding:0 !important;
+}
+
+.container .coppyright {
+    font-size: 20px;
+    text-align: center;
+}
+.container .coppyright p{
+    text-align: center;
+    font-family: 'Palatino Linotype', sans-serif;    
+}
+
+.imagefb{
+    /* margin-top:-14px !important; */
+    width: 30px !important;
+   height: 30px !important;
+   padding: 0px !important;
+   margin: 0px !important;
+   -moz-border-radius: 25px !important;
+   -webkit-border-radius: 25px !important;
+   --border-radius: 25px !important;
+   border-radius: 25px !important;
+}
+/* End Footer */
+
+/* Display */
+@media only screen and (max-width: 600px)
+    {
+    /* body,html{
+        background: url("../image/buble.png") no-repeat !important;
+        height: 100%; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    } */
+    .skill .cir{
+        width: 50%;
+        height: 50%;
+    }
+    .content{
+        left:0; 
+    }
+    .containtime h2{
+        font-size: 15px;
+    }
+    .containtime p{
+        font-size: 12px;
+    }
+    .message .btnsend{
+        text-align: center;
+    }
+
+    [data-aos-delay] {
+    transition-delay: 0 !important;
+  }      
+  /* .animated {
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        } */
+}
+/* End Display */
+
+/* Animation  */
+
+#skill{
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+/* #title{
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+#amcir1{
+    animation-delay: 2s;
+}
+#amcir2,#per1{
+    animation-delay: 3s;
+}
+#amcir3,#per2{
+    animation-delay: 4s;
+}
+#amcir4,#per3{
+    animation-delay: 5s;
+}
+#amcir5,#per4{
+    animation-delay: 6s;
+}
+#amcir6,#per5{
+    animation-delay: 7s;
+}
+#amcir7,#per6{
+    animation-delay: 8s;
+}
+#amcir8,#per7{
+    animation-delay: 9s;
+}
+#per8{
+    animation-delay: 10s;
+} */
+/* */
